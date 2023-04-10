@@ -1,0 +1,16 @@
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+sum = num1 + num2
+diff = num1 - num2
+product = num1 * num2
+if num2 != 0:
+    quotient = num1 / num2
+    floor_quotient = num1 // num2
+else:
+    quotient = "undefined"
+    floor_quotient = "undefined"
+print("Sum:", sum)
+print("Difference:", diff)
+print("Product:", product)
+print("Quotient:", quotient)
+print("Floor Quotient:", floor_quotient)

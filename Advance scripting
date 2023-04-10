@@ -1,0 +1,5 @@
+names = input("Enter a comma-separated list of student names: ").split(",")
+Admission_ID = input("Enter a comma-separated list of admission IDs: ").split(",")
+CAP_Rank = input("Enter a comma-separated list of CAP ranks: ").split(",")
+for name, admission_id, cap_rank in zip(names, Admission_ID, CAP_Rank):
+    print("Hi {},\n\nCongratulations...!  You got selected for next round of recruitment process. Submit your academic credential including primary and secondary certificates. Your admission ID is {} and you will be eligible for the next round of interview with a CAP rank of {}. If you submit all the documents on time, the university might offer you a scholarship.\n\n".format(name, admission_id, cap_rank))

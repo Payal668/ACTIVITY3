@@ -1,0 +1,11 @@
+def earthquake_impact(magnitude):
+    if magnitude < 2:
+        return "Usually not felt, but can be recorded by seismograph."
+    elif magnitude < 4:
+        return "Often felt, but only causes minor damage."
+    elif magnitude < 6:
+        return "Slight to moderate damage to buildings and other structures."
+    elif magnitude < 8:
+        return "Severe damage and shaking, with some buildings completely destroyed."
+    else:
+        return "Great earthquake. Can totally destroy communities near the epicenter."

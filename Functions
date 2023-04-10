@@ -1,0 +1,5 @@
+def calculate_discounted_price(amount, is_prime_member):
+    discounted_amount = amount - (0.08 * amount)
+    if is_prime_member:
+        discounted_amount = discounted_amount - (0.15 * discounted_amount)
+    return discounted_amount

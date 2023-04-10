@@ -1,0 +1,6 @@
+def chit_chat_word_count(message):
+    words = message.split()
+    if len(words) <= 30:
+        return message
+    else:
+        return ' '.join(words[:30])

@@ -1,0 +1,5 @@
+def chit_chat(message):
+    if len(message) <= 200:
+        return message
+    else:
+        return message[:200]

@@ -1,0 +1,10 @@
+team_runs = int(input("Enter the total runs scored by the team: "))
+team_overs = float(input("Enter the total overs faced by the team: "))
+team_conceded = int(input("Enter the total runs conceded by the team: "))
+team_overs_bowled = float(input("Enter the total overs bowled by the team: "))
+team_nrr = (team_runs / team_overs) - (team_conceded / team_overs_bowled)
+print("The net run rate of the team is:", team_nrr)
+if team_nrr > 0:
+    print("The team is on top of the points table")
+else:
+    print("The team is not on top of the points table")

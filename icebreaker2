@@ -1,0 +1,17 @@
+def radiation_type():
+    frequency = float(input("Enter the frequency of the radiation in Hz: "))
+    if frequency < 3e9:
+        radiation = "Radio Waves"
+    elif frequency < 3e12:
+        radiation = "Microwaves"
+    elif frequency < 4.3e14:
+        radiation = "Infrared Light"
+    elif frequency < 7.5e14:
+        radiation = "Visible Light"
+    elif frequency < 3e17:
+        radiation = "Ultraviolet Light"
+    elif frequency < 3e19:
+        radiation = "X-Rays"
+    else:
+        radiation = "Gamma Rays"
+    print(f"The radiation with frequency {frequency:.2e} Hz is {radiation}.")

@@ -1,0 +1,11 @@
+def conversion(num, unit):
+    if unit == 'cm':
+        return num / 2.54   
+    elif unit == 'in':
+        return num * 2.54   
+    elif unit == 'm':
+        return num * 3.281  
+    elif unit == 'ft':
+        return num / 3.281 
+    else:
+        return "Invalid unit"

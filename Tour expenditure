@@ -1,0 +1,18 @@
+def calculate_hotel_bill(room_type, num_days, food_amount):
+    if room_type == "Deluxe":
+        room_tariff = 7500 * num_days
+        gst_rate = 0.18  
+    elif room_type == "Non-AC":
+        room_tariff = 4500 * num_days
+        gst_rate = 0.05  
+    else:
+        return "Invalid Room Type!"
+    food_tax = food_amount * gst_rate
+    cgst = sgst = round(food_tax/2, 2) 
+    tip_amount = food_amount * 0.1
+    grand_total = round(food_amount + food_tax + tip_amount, 2)
+    print("Room Tariff: INR", format(room_tariff, '.2f'))
+    print("CGST: INR", format(cgst, '.2f'))
+    print("SGST: INR", format(sgst, '.2f'))
+    print("Tip Amount: INR", format(tip_amount, '.2f'))
+    print("Grand Total: INR", format(grand_total, '.2f'))

@@ -1,0 +1,13 @@
+Nint = 28
+Div = 1
+SumDiv = 0
+while Div < Nint:
+    if Nint % Div == 0:
+        SumDiv += Div
+    Div += 1
+if SumDiv > Nint:
+    print(Nint, "is abundant")
+elif SumDiv < Nint:
+    print(Nint, "is deficient")
+else:
+    print(Nint, "is perfect")
